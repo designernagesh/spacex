@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SpaceX Launch Programs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+  <div class="wrapper">
+    <h1 class="page-title">SpaceX Launch Programs</h1> 
+    <div class="content">
+      <!-- Sidebar HTML Starts Here -->
+      <section class="sidebar">
+        <h2 class="sidebar-title">Filters</h2>
+        <h3 class="filter-title">Launch Year</h3>
+        <div class="filter-year">
+          <button onclick="filterYear(2006)">2006</button>
+          <button onclick="filterYear(2007)">2007</button>
+          <button onclick="filterYear(2008)">2008</button>
+          <button onclick="filterYear(2009)">2009</button>
+          <button onclick="filterYear(2010)">2010</button>
+          <button onclick="filterYear(2011)">2011</button>
+          <button onclick="filterYear(2012)">2012</button>
+          <button onclick="filterYear(2013)">2013</button>
+          <button onclick="filterYear(2014)">2014</button>
+          <button onclick="filterYear(2015)">2015</button>
+          <button onclick="filterYear(2016)">2016</button>
+          <button onclick="filterYear(2017)">2017</button>
+          <button onclick="filterYear(2018)">2018</button>
+          <button onclick="filterYear(2019)">2019</button>
+          <button onclick="filterYear(2020)">2020</button>
+        </div>
+
+        <h3 class="filter-title">Successful Launch</h3>
+        <div class="successful-launch">
+          <button onclick="sccessfulLaunch(true)">True</button>
+          <button onclick="sccessfulLaunch(false)">False</button>
+        </div>       
+        
+        <h3 class="filter-title">Successful Landing</h3>
+        <div class="successful-landing">
+          <button onclick="sccessfulLanding(true)">True</button>
+          <button onclick="sccessfulLanding(false)">False</button>
+        </div>        
+      </section>
+
+      <!-- Main Content HTML Starts Here -->
+      <section class="main">
+          <div class="dataPlace">                        
+          </div>          
+      </section>
+    </div>
+
+    <!-- Footer HTML Starts Here -->
+    <footer>
+      <p><strong>Developed By: </strong> Nagesh Kumar</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+:root{
+  --primary-color: #dc3545;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;  padding: 0;
+}
+body{
+  background: rgb(231, 231, 231);
+  font: normal 14px 'Montserrat', sans-serif;
+}
+h1, h2, h3{
+  font-weight: bold;
+}
+.wrapper{
+  width: 1440px;
+  margin: 50px auto;
+}
+h1.page-title{  
+  margin-bottom: 20px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* 
+  [ Sidebar CSS Starts Here ] */
+
+section.sidebar{
+  width: 23%;
+  background: #FFF; 
+  border-radius: 10px;
+  padding: 20px;
+}
+h2.sidebar-title{
+  margin-bottom: 20px;
+}
+h3.filter-title{
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCC;
+}
+.filter-year, .successful-launch, .successful-landing{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;  
+}
+section.sidebar button{
+  border: none; 
+  padding: 10px 20px;
+  margin: 2%;
+  width: 46%;
+  border-radius: 3px;
+  background-color: #C5E09B;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+section.sidebar button:hover{
+  background-color: #7CBA01;
+  color: #FFF;
+}
+
+
+/* 
+  [ Main CSS Starts Here ] */
+
+section.main{
+  width: 75%;
+  background: #FFF; 
+  border-radius: 10px;
+  padding: 20px;
+}
+.dataPlace{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #FFF;
+  margin: 1%;
+  width: 23%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+}
+.card .image{
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.card .image img{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.card p{
+  margin-bottom: 10px;
+}
+/* 
+  [ Fooer CSS Starts Here ] */
+
+footer{
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+/*/////////////////////////////////////////////////////////////
+  [ Responsive CSS Starts Here ]
+*/
+
+@media(max-width: 1024px){
+  .wrapper {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  section.sidebar{
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  section.main{
+    width: 68%;
+  }
+}
+
+@media(max-width: 700px){
+  .wrapper {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .content {    
+    flex-direction: column;
+  }
+  section.sidebar{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.main{
+    width: 100%;
+  }
+}
